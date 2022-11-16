@@ -57,29 +57,70 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
+  
+  button rechtsoven niet berijkbaar met screenreader
+  goed contrast in website dus visueel beperkte mensen hebben er weinig last van
+  
+  
 
   #### Screenreader
   Hier korte omschrijving (met indien nodig afbeeldingen)
+  
+  Homepage - Kan niet verder in de header boven navbar klikken.
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
 
 
   #### Muis en Toetsenbord 
   Hier korte omschrijving (met indien nodig afbeeldingen)
+  
+  Kleurtjes:
+  
+  Homepage - Goede kleurcombinatie zorgt voor geen problemen, geen dark/light mode vanwege stijl van website
+  Partnerpage - Goede kleurcombinatie zorgt voor geen problemen, geen dark/light mode vanwege stijl van website
+  
+  Muis:
+  
+  Homepage - alle buttons geven feedback en hebben een hover state, alles is accessible
+  Partnerpage - alle buttons geven feedback en hebben een hover state, alles is accessible
+  
+  Toetsenbord:
+  
+  Homepage - items in list geven geeft hover state wanneer overheen getabt
+  
+  <img src="readme-images/itemsimage.png">
+  
+  Partnerpage - volledige page accesible met toetsenbord, behalve nextbutton rechtsbovenaan.
 
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen):
 
+  items met tab hoverstate aan laten geven, next button clickable maken.
 
   #### Motoriek (shocks, elastiekjes)
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+  
+  Elastiekjes:
+  
+  Homepage - Klein beetje moeite met muisgebruik. Maar weinig last op website zelf
+  Partnerpage - Klein beetje moeite met muisgebruik. Maar weinig last op website zelf
+  
+  Shocks:
+  
+  Homepage - Er valt niets te typen en de website is goed gemaakt dus geen problemen
+  Partnerpage - Er valt niets te typen en de website is goed gemaakt dus geen problemen
+  
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  Geen oplossing nodig
 
+  #### Visueel (brillen, contrast, kleurenblind, dark/light).
+  
+  Brillen:
+  
+  Homepage - Pagina's hebben goed contrast dus weinig last van visuele beperkingen
+  Partnerpage - Pagina's hebben goed contrast dus weinig last van visuele beperkingen
 
-  #### Visueel (brillen, contrast, kleurenblind, dark/light). 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen):
+  Geen oplossing nodig
 
 </details>
 
