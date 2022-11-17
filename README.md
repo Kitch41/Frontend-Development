@@ -89,7 +89,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   
   Homepage - items in list geven geeft hover state wanneer overheen getabt
   
-  <img src="readme-images/itemsimage.png">
+ <img src="readme-images/itemsimage.png" width="375px" alt="picture of listed items on homepage">
   
   Partnerpage - volledige page accesible met toetsenbord, behalve nextbutton rechtsbovenaan.
 
