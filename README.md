@@ -43,7 +43,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="readme-images/homepagescreenshot.jpg" width="375px" alt="Een homepage met recente evenementen en een video">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
+  Partnerpage  
   <img src="readme-images/partnerpagescreenshot.jpg" width="375px" alt="een pagina met een aantal partners van dreamhack en een link naar hun website">
  
 </details>
@@ -57,26 +57,27 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
-  
-  button rechtsoven niet berijkbaar met screenreader
-  goed contrast in website dus visueel beperkte mensen hebben er weinig last van
-  
-  
+
+ button rechtsoven niet berijkbaar met screenreader
+ goed contrast in website dus visueel beperkte mensen hebben er weinig last van
 
   #### Screenreader
   Hier korte omschrijving (met indien nodig afbeeldingen)
-  
+
   Homepage - Kan niet verder in de header boven navbar klikken.
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
 
+  Geen oplossing nodig
+
 
   #### Muis en Toetsenbord 
   Hier korte omschrijving (met indien nodig afbeeldingen)
-  
+
   Kleurtjes:
   
   Homepage - Goede kleurcombinatie zorgt voor geen problemen, geen dark/light mode vanwege stijl van website
+
   Partnerpage - Goede kleurcombinatie zorgt voor geen problemen, geen dark/light mode vanwege stijl van website
   
   Muis:
@@ -96,8 +97,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   items met tab hoverstate aan laten geven, next button clickable maken.
 
+
   #### Motoriek (shocks, elastiekjes)
-  
+  Hier korte omschrijving (met indien nodig afbeeldingen)
+
   Elastiekjes:
   
   Homepage - Klein beetje moeite met muisgebruik. Maar weinig last op website zelf
@@ -107,21 +110,23 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   
   Homepage - Er valt niets te typen en de website is goed gemaakt dus geen problemen
   Partnerpage - Er valt niets te typen en de website is goed gemaakt dus geen problemen
-  
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-  Geen oplossing nodig
 
-  #### Visueel (brillen, contrast, kleurenblind, dark/light).
-  
+ geen oplossing nodig
+
+  #### Visueel (brillen, contrast, kleurenblind, dark/light). 
+  Hier korte omschrijving (met indien nodig afbeeldingen)
+
   Brillen:
   
   Homepage - Pagina's hebben goed contrast dus weinig last van visuele beperkingen
   Partnerpage - Pagina's hebben goed contrast dus weinig last van visuele beperkingen
 
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen):
-  Geen oplossing nodig
 
+  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+
+  Geen oplossing nodig 
 </details>
 
 
