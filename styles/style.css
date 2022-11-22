@@ -1,8 +1,21 @@
+@font-face {
+	font-family: "tusker grotesk";
+	src: url(../fonts/tusker-grotesk-4500-medium.ttf);
+}
+
+@font-face {
+	font-family: "sharp grotesk";
+	src: url(../fonts/SharpGroteskBook18-Regular.ttf);
+}
+
+
 /**************/
 /* CSS REMEDY */
 /**************/
 *, *::after, *::before {
   box-sizing:border-box;  
+  margin: 0;
+  padding:0;
 }
 
 button, summary {
@@ -18,8 +31,16 @@ button, summary {
 /*********************/
 :root {
 	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
+	--color-textwhite: white;
+	--primary-font-family: "Roboto";
+    --primary-font-weight: 600;
+    --secondary-font-family: "Roboto Slab";
+    --secondary-font-weight: 400;
+    --text-font-family: "Roboto";
+    --text-font-weight: 400;
+    --accent-font-family: "Roboto";
+    --accent-font-weight: 500;
+
 }
 
 
@@ -31,4 +52,219 @@ button, summary {
 /****************/
 
 /* jouw code */
+
+/* Scroller topscreen css */
+
+main section:nth-child(1) {
+	background-image: url(https://dreamhack.com/dallas/wp-content/uploads/sites/17/2022/05/warp-festival-header.svg);
+	background-color: #111;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+iframe {
+	border-radius: 1em;
+}
+
+/* header css*/
+
+header section ul {
+	display: flex;
+}
+
+header section ul li {
+	width: 50%;
+
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: .5em;
+	align-items: center;
+	background-color: #111;
+	padding: .6em 0.7em 1.1em 1.1em;
+	
+}
+
+header section ul li p {
+	color: var(--color-textwhite);
+	letter-spacing: 1px;	
+	font-family: "sharp grotesk";
+}
+
+/* location text p*/
+
+header section ul li p:nth-of-type(1) {
+	font-size: 0.9em;
+	line-height: 1.5em;
+	padding-top: 0.2em;
+	font-family: "tusker grotesk";
+	text-transform: uppercase;
+
+}
+
+/* both 2nd and 3rd p combined css */
+
+header section ul li p:nth-of-type(2),
+header section ul li p:nth-of-type(3) {
+	line-height: 0.9em;
+	font-size: 0.7em;
+}
+
+/* date p top */
+
+header section ul li p:nth-of-type(2) {
+	display: flex;
+	gap: .25em; 
+	margin-top: .4em;
+}
+
+header section ul li p:nth-of-type(2) time {
+	flex-shrink: 0;
+}
+
+/* on sale a */
+
+header section ul li a {
+	background-color: red;
+	border-radius: .125em;
+	padding: 0 0.2em;
+	color: var(--color-textwhite);
+	text-decoration: none;
+	font-family: "sharp	 grotesk";
+}
+
+/* second header */
+
+header section:nth-of-type(2) {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	place-items:center;
+	background-color: black;
+	padding: 1em;
+}
+
+
+/* dreamhack logo in second header */
+
+header section a:first-child img:nth-of-type(1) {
+	width: 237px;
+	height:auto;
+	
+}
+
+header section a:first-child {
+	padding: 0.6em 0.7em 0.6em 1.2em;	
+}
+
+header section:nth-of-type(2) button {
+	display:grid;
+  	place-items:center;
+	background-color: black;
+	border: none;
+	height: 2em;
+	width: 2em;
+}
+
+header section:nth-of-type(2) button span {
+	grid-row-start:1;
+  	grid-column-start:1;
+	width:1.6em;
+	height:.21em;
+	border-radius: 1em;
+	transition-duration:.5s;
+	background-color: orangered;
+}
+
+header section:nth-of-type(2) button span:nth-of-type(1) {
+	transform:translateY(-.42em);
+}
+
+header section:nth-of-type(2) button span:nth-of-type(3) {
+	transform:translateY(.42em);
+}
+
+
+/* nav button transform */
+
+header section:nth-of-type(2) button.menuOpen span {
+	background-color: white;
+}
+
+header section:nth-of-type(2) button.menuOpen span:nth-of-type(1) {
+	transform:rotate(45deg) 
+	scalex(1.25);
+	height:.25em;
+}
+
+header section:nth-of-type(2) button.menuOpen span:nth-of-type(2) {
+	opacity:0;
+}
+
+header section:nth-of-type(2) button.menuOpen span:nth-of-type(3) {
+	transform:rotate(-45deg) 
+	scalex(1.25);
+	height:.25em;
+}
+
+
+
+
+
+/* main 1st section css*/
+
+main section {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	gap:1em;
+	padding: 2em 0;
+}
+
+main section h1 {
+	color:var(--color-textwhite);
+	font-family: "tusker grotesk";
+	font-size: 2.5em;
+	text-align: center;
+	text-transform: uppercase;
+	margin: 0 1.1em;
+}
+
+main section p {
+	color: var(--color-textwhite);
+}
+
+main section p:nth-of-type(1) {
+	font-family: "sharp grotesk";
+	margin: 1.2em 0 0;
+	line-height: 0.5em;
+}
+
+main section p:nth-of-type(2) {
+	font-family: "sharp grotesk";
+	margin: -0.7em 0 2em;
+}
+
+main section a {
+	background-color: red;
+	text-decoration: none;
+	color: var(--color-textwhite);
+	border-radius: .5em;
+	padding: 1em 2.2em;
+
+	font-family: "sharp grotesk";
+	font-size: 0.9em;
+}
+
+
+main section a:nth-of-type(2) {
+	background-color: #f003;
+	border: 1px orange solid;
+}
+
+main section a:nth-of-type(2)::after {
+	content: ' 🎫';
+	filter: grayscale(1);
+}
+
 
