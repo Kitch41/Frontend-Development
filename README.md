@@ -157,9 +157,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1e voortgang</summary>
 
   ### Stand van zaken
-  Het gaat tot nu toe redelijk goed met mijn progressie, ik heb nog wel wat moeite met de moeilijkheidsgraad van de website die ik heb gekozen aangezien hij heel erg accessible is. Dus moet ik wat extra nadenken over mijn code. Ook is het heel moeilijk om dingen van mijn website te bekijken qua code omdat ze alleen maar divs gebruiken.
-  
-  <img src="readme-images/voortgang1" width="375px" alt="screenshot van mijn homepage">
+  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
 
   ### Agenda voor meeting
