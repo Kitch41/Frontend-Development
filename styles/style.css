@@ -18,13 +18,16 @@
 /**************/
 
 
-*, *::after, *::before {
-  box-sizing:border-box;  
-  margin: 0;
-  padding:0;
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
-button, summary {
+button,
+summary {
 	cursor: pointer;
 }
 
@@ -39,13 +42,13 @@ button, summary {
 	/* startje */
 	--color-textwhite: white;
 	--primary-font-family: "Roboto";
-    --primary-font-weight: 600;
-    --secondary-font-family: "Roboto Slab";
-    --secondary-font-weight: 400;
-    --text-font-family: "Roboto";
-    --text-font-weight: 400;
-    --accent-font-family: "Roboto";
-    --accent-font-weight: 500;
+	--primary-font-weight: 600;
+	--secondary-font-family: "Roboto Slab";
+	--secondary-font-weight: 400;
+	--text-font-family: "Roboto";
+	--text-font-weight: 400;
+	--accent-font-family: "Roboto";
+	--accent-font-weight: 500;
 
 }
 
@@ -66,13 +69,16 @@ button, summary {
 
 iframe {
 	border-radius: 1em;
+	border: none;
+	width: 100%;
+	height: auto;
 }
 
 h2 {
 	font-family: "tusker grotesk";
 	text-transform: uppercase;
 	text-align: center;
-	font-size:3.5em;
+	font-size: 3.5em;
 	font-weight: bold;
 }
 
@@ -80,8 +86,9 @@ h3 {
 	font-family: "tusker grotesk";
 	text-transform: uppercase;
 	text-align: center;
-	font-size:3em;
-	font-weight: bold;
+	font-size: 3em;
+	font-weight: 600;
+	line-height: 1.14em;
 }
 
 b {
@@ -97,11 +104,18 @@ b {
 /* Header*/
 /**********/
 
-header > section > ul {
+header>nav>ul {
 	display: flex;
+	overflow-x: scroll;
+	cursor: grab;
+	overflow: auto;
 }
 
-header > section > ul > li {
+header>nav>ul::-webkit-scrollbar {
+	display: none;
+}
+
+header>nav>ul>li {
 	min-width: 12em;
 	max-width: 30em;
 
@@ -111,13 +125,13 @@ header > section > ul > li {
 	align-items: center;
 	background-color: #111;
 	padding: .6em 0.7em 1.1em 1.1em;
-	
+
 }
 
 
-header > section > ul > li > p {
+header>nav>ul>li>p {
 	color: var(--color-textwhite);
-	letter-spacing: 1px;	
+	letter-spacing: 1px;
 	font-family: "sharp grotesk";
 }
 
@@ -125,7 +139,7 @@ header > section > ul > li > p {
 
 /* location text p*/
 
-header > section > ul > li > p:nth-of-type(1) {
+header>nav>ul>li>p:nth-of-type(1) {
 	font-size: 0.9em;
 	line-height: 1.5em;
 	padding-top: 0.2em;
@@ -138,8 +152,8 @@ header > section > ul > li > p:nth-of-type(1) {
 
 /* both 2nd and 3rd p combined css */
 
-header > section > ul > li > p:nth-of-type(2),
-header > section > ul > li > p:nth-of-type(3) {
+header>nav>ul>li>p:nth-of-type(2),
+header>nav>ul>li>p:nth-of-type(3) {
 	line-height: 0.9em;
 	font-size: 0.7em;
 }
@@ -147,13 +161,13 @@ header > section > ul > li > p:nth-of-type(3) {
 
 /* date p top */
 
-header > section > ul >li > p:nth-of-type(2) {
+header>nav>ul>li>p:nth-of-type(2) {
 	display: flex;
-	gap: .25em; 
+	gap: .25em;
 	margin-top: .4em;
 }
 
-header > section > ul > li > p:nth-of-type(2) > time {
+header>nav>ul>li>p:nth-of-type(2)>time {
 	flex-shrink: 0;
 }
 
@@ -161,7 +175,7 @@ header > section > ul > li > p:nth-of-type(2) > time {
 
 /* on sale a */
 
-header > section > ul > li > a {
+header>nav>ul>li>a {
 	background-color: red;
 	border-radius: .125em;
 	padding: 0 0.2em;
@@ -174,11 +188,11 @@ header > section > ul > li > a {
 
 /* second header */
 
-header > section:nth-of-type(2) {
+header>nav:nth-of-type(2) {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	place-items:center;
+	place-items: center;
 	background-color: black;
 	padding: 1em;
 }
@@ -187,41 +201,88 @@ header > section:nth-of-type(2) {
 
 /* dreamhack logo in second header */
 
-header > section > a:first-child > img:nth-of-type(1) {
+header>nav>a:first-child>img:nth-of-type(1) {
 	width: 237px;
-	height:auto;
-	
+	height: auto;
+
 }
 
-header > section > a:first-child {
-	padding: 0.6em 0.7em 0.6em 1.2em;	
+header>nav>a:first-child {
+	padding: 0.6em 0.7em 0.6em 1.2em;
 }
 
-header > section:nth-of-type(2) button {
-	display:grid;
-  	place-items:center;
+header>nav:nth-of-type(2) button {
+	display: grid;
+	place-items: center;
 	background-color: black;
 	border: none;
 	height: 2em;
 	width: 2em;
 }
 
-header > section:nth-of-type(2) > button > span {
-	grid-row-start:1;
-  	grid-column-start:1;
-	width:1.6em;
-	height:.21em;
+
+header>nav:nth-of-type(2)>button>span {
+	grid-row-start: 1;
+	grid-column-start: 1;
+	width: 1.6em;
+	height: .21em;
 	border-radius: 1em;
-	transition-duration:.5s;
+	transition-duration: 0.5s;
 	background-color: orangered;
 }
 
-header > section:nth-of-type(2) > button > span:nth-of-type(1) {
-	transform:translateY(-.42em);
+header>nav:nth-of-type(2)>button:hover>span {
+	background-color: white;
 }
 
-header > section:nth-of-type(2) > button > span:nth-of-type(3) {
-	transform:translateY(.42em);
+header>nav:nth-of-type(2)>button>span:nth-of-type(1) {
+	transform: translateY(-.42em);
+}
+
+header>nav:nth-of-type(2)>button>span:nth-of-type(3) {
+	transform: translateY(.42em);
+}
+
+
+
+
+/* dropdown menu*/
+
+
+header nav:nth-of-type(2) div {
+	width: 100%;
+	border-radius: 6px;
+    box-shadow: 0px 0px 4px -2px rgba(0, 0, 0, 0.5);
+    margin-top: 17px;
+    position: absolute;
+    left: 0;
+    top: 19%;
+    display: block;
+    background-color: #ffffff;
+	transition: 0.4s;
+    z-index: 10;
+	transform: scaleY(0);
+	transform-origin: top center;
+	max-height: 0;
+}
+
+header nav:nth-of-type(2) div.menuOpen {
+	transform: scaleY(1);
+	max-height: 100vh;
+}
+
+header nav:nth-of-type(2) div a {
+	text-decoration: none;
+	display: block;
+	color: black;
+	font-family: "sharp grotesk";
+	padding: 0.8em 1em;
+}
+
+header nav:nth-of-type(2) div a:hover {
+	background-color: #f2f2f2;
+	color: #ff4b0a;
+	border-radius: 6px;
 }
 
 
@@ -229,24 +290,22 @@ header > section:nth-of-type(2) > button > span:nth-of-type(3) {
 
 /* nav button transform */
 
-header > section:nth-of-type(2) > button.menuOpen > span {
+ header>nav:nth-of-type(2)>button.menuOpen:hover span {
 	background-color: white;
+} 
+
+header>nav:nth-of-type(2)>button.menuOpen>span:nth-of-type(1) {
+	transform: rotate(45deg) scalex(1.25);
+	height: .25em;
 }
 
-header > section:nth-of-type(2) > button.menuOpen > span:nth-of-type(1) {
-	transform:rotate(45deg) 
-	scalex(1.25);
-	height:.25em;
+header>nav:nth-of-type(2)>button.menuOpen>span:nth-of-type(2) {
+	opacity: 0;
 }
 
-header > section:nth-of-type(2) > button.menuOpen > span:nth-of-type(2) {
-	opacity:0;
-}
-
-header > section:nth-of-type(2) > button.menuOpen > span:nth-of-type(3) {
-	transform:rotate(-45deg) 
-	scalex(1.25);
-	height:.25em;
+header>nav:nth-of-type(2)>button.menuOpen>span:nth-of-type(3) {
+	transform: rotate(-45deg) scalex(1.25);
+	height: .25em;
 }
 
 
@@ -259,12 +318,12 @@ header > section:nth-of-type(2) > button.menuOpen > span:nth-of-type(3) {
 /* main 1st section css*/
 /***********************/
 
-main > section:nth-of-type(1) {
+main>section:nth-of-type(1) {
 	display: flex;
 	align-items: center;
 	flex-direction: column;
-	gap:1em;
-	padding: 2em 0;
+	gap: 1em;
+	padding: 2em 1em;
 
 	background-image: url(https://dreamhack.com/dallas/wp-content/uploads/sites/17/2022/05/warp-festival-header.svg);
 	background-color: #111;
@@ -273,8 +332,8 @@ main > section:nth-of-type(1) {
 	background-size: cover;
 }
 
-main > section:nth-of-type(1) > h1 {
-	color:var(--color-textwhite);
+main>section:nth-of-type(1)>h1 {
+	color: var(--color-textwhite);
 	font-family: "tusker grotesk";
 	font-size: 2.5em;
 	text-align: center;
@@ -282,22 +341,22 @@ main > section:nth-of-type(1) > h1 {
 	margin: 0 1.1em;
 }
 
-main > section:nth-of-type(1) > p {
+main>section:nth-of-type(1)>p {
 	color: var(--color-textwhite);
 }
 
-main > section:nth-of-type(1) > p:nth-of-type(1) {
+main>section:nth-of-type(1)>p:nth-of-type(1) {
 	font-family: "sharp grotesk";
 	margin: 1.2em 0 0;
 	line-height: 0.5em;
 }
 
-main > section:nth-of-type(1) > p:nth-of-type(2) {
+main>section:nth-of-type(1)>p:nth-of-type(2) {
 	font-family: "sharp grotesk";
 	margin: -0.7em 0 2em;
 }
 
-main > section:nth-of-type(1) > a {
+main>section:nth-of-type(1)>a {
 	background-color: red;
 	text-decoration: none;
 	color: var(--color-textwhite);
@@ -321,12 +380,22 @@ main > section:nth-of-type(1) > a {
 /* main 2st section css*/
 /***********************/
 
-main > section:nth-of-type(2) > div > p {
+
+main>section:nth-of-type(2)>section {
+	padding-top: 1em;
+}
+
+main>section:nth-of-type(2)>section>h2 {
+	padding-top: 0.5em;
+}
+
+main>section:nth-of-type(2)>section>p {
 	color: #333;
 	font-family: "sharp grotesk";
 	font-size: 20px;
 	font-weight: 400;
 	text-align: center;
+	padding: 1em 1em 2em 1em;
 }
 
 
@@ -342,98 +411,129 @@ main > section:nth-of-type(2) > div > p {
 /***********************/
 
 
-main > section:nth-of-type(3) {
+main>section:nth-of-type(3) {
 	background-image: url(https://dreamhack.com/dallas/wp-content/uploads/sites/17/2022/05/warp-festival-header.svg);
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-color: rgba(255,255,255,0.91);
+	background-color: rgba(255, 255, 255, 0.91);
 	background-blend-mode: lighten;
 }
 
-main > section:nth-of-type(2) > div {
+main>section:nth-of-type(3)>div {
 	padding: 1em 2em;
 	margin-bottom: 5em;
 }
 
 
-main > section > a:nth-of-type(3) {
+main>section>a:nth-of-type(3) {
 	background-color: #f003;
 	border: 1px orange solid;
 }
 
-main > section > a:nth-of-type(3)::after {
+main>section>a:nth-of-type(3)::after {
 	content: ' 🎫';
 	filter: grayscale(1);
 }
 
 
-main > section:nth-of-type(3) > h3 {
+main>section:nth-of-type(3)>h3 {
 	margin-bottom: 1em;
 }
 
 
 /* list section locations */
 
-main > section:nth-of-type(3) {
+main>section:nth-of-type(3) {
 	padding: 2em;
 }
 
 
-main > section:nth-of-type(3) > ul {
-	display: flex;
+main>section:nth-of-type(3)>ul {
+	display: grid;
 	justify-content: center;
-	flex-wrap: wrap;
 	gap: 3em;
+	grid-template-columns: repeat( auto-fit, minmax(20em, 1fr) );
 }
 
-main > section:nth-of-type(3) > ul > li { 
+main>section:nth-of-type(3)>ul>li {
 	display: flex;
 	flex-direction: column;
 	list-style: none;
 	background-color: #f2f2f2;
-	width: 363.3px;
 }
 
-main > section:nth-of-type(3) > ul > li > div:nth-of-type(1) {
+main>section:nth-of-type(3)>ul>li>div:nth-of-type(1) {
 	order: 2;
 	display: flex;
 	flex-direction: column;
 	padding: 1.5em;
 }
 
-main > section:nth-of-type(3) > ul > li > div > img {
-	width: 363px;
-	height: 250px;
-	transition: all .7s ease;
-    vertical-align: middle;
+main>section:nth-of-type(3)>ul>li>div>h5 {
+	position:absolute;
+	top:2.8em;
+	right:-6.7em;
+	
+	width:20em;
+	margin:0;
+	
+	background-color:#ff0246;
+	color:white;
+	text-align:center;
+	line-height:1.7em;
+	text-transform: uppercase;
+	
+	transform:rotate(45deg);
+	
+	font-family: "sharp grotesk";
+	font-size: 0.8em;
+	font-weight: bolder;
+
+	z-index:100;
 }
 
-main > section:nth-of-type(3) > ul > li > div > img:hover {
+main>section:nth-of-type(3)>ul>li>div>img {
+	display:block;
+	width:100%;
+	height:100%;
+	object-fit:cover;
+	object-position:center;
+	
+	transition:.5s;
+}
+
+main>section:nth-of-type(3)>ul>li>div>img:hover {
 	transform: scale(1.2);
 	filter: brightness(.7);
 }
 
-main > section:nth-of-type(3) > ul > li > div:nth-of-type(2) {
+main>section:nth-of-type(3)>ul>li>div:nth-of-type(2) {
 	order: 1;
 	display: inline-block;
 	overflow: hidden;
+	height: 16em;
+
+
+	position:relative;
+	width:100%;
+	height:16em;
 }
 
 
 
-main > section:nth-of-type(3) > ul > li > div > p {
+main>section:nth-of-type(3)>ul>li>div>p {
 	order: 3;
 	font-family: "sharp grotesk";
 	font-size: 1em;
 	color: gray;
 }
 
-main > section:nth-of-type(3) > ul > li > div > p:nth-of-type(3) {
+main>section:nth-of-type(3)>ul>li>div>p:nth-of-type(3) {
 	margin-bottom: 1em;
 }
 
-main > section:nth-of-type(3) > ul > li > div h4 {
+main>section:nth-of-type(3)>ul>li>div h4 {
 	font-family: "tusker grotesk";
 	font-size: 1.6em;
 	order: 2;
@@ -441,7 +541,7 @@ main > section:nth-of-type(3) > ul > li > div h4 {
 	text-transform: uppercase;
 }
 
-main > section:nth-of-type(3) > ul > li > div > a {
+main>section:nth-of-type(3)>ul>li>div>a {
 	order: 4;
 	width: 10em;
 	background-color: red;
@@ -459,7 +559,7 @@ main > section:nth-of-type(3) > ul > li > div > a {
 /* main 4th section css*/
 /***********************/
 
-main > section:nth-of-type(4) {
+main>section:nth-of-type(4) {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -467,37 +567,37 @@ main > section:nth-of-type(4) {
 	background-color: #f2f2f2;
 	padding: 1%;
 	gap: 4em;
-	margin:1% 1% 20% 1%;
+	margin: 1% 1% 5% 1%;
 }
 
-main > section:nth-of-type(4) > div:nth-of-type(1) {
+main>section:nth-of-type(4)>div:nth-of-type(1) {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: left;
+	align-items: start;
 	padding: 10% 5% 5% 5%;
 	gap: 1em;
 }
 
-main > section:nth-of-type(4) > div:nth-of-type(1) > h3{
+main>section:nth-of-type(4)>div:nth-of-type(1)>h2 {
 	text-align: left;
 	font-size: 2.4em;
 }
 
-main > section:nth-of-type(4) > div:nth-of-type(1) > p{
+main>section:nth-of-type(4)>div:nth-of-type(1)>p {
 	max-width: 34em;
 	text-align: left;
 	font-family: "sharp grotesk";
-	color: gray;
+	color: #000000B3;
 }
 
-main > section:nth-of-type(4) > div:nth-of-type(2) > img {
+main>section:nth-of-type(4)>div:nth-of-type(2)>img {
 	width: 100vw;
 	max-width: 30em;
-	height:auto;
+	height: auto;
 }
 
-main > section:nth-of-type(4) > div:nth-of-type(1) > a {
+main>section:nth-of-type(4)>div:nth-of-type(1)>a {
 	border: solid 1px #000000BD;
 	padding: 18px;
 	border-radius: 3px;
@@ -507,5 +607,387 @@ main > section:nth-of-type(4) > div:nth-of-type(1) > a {
 	font-family: "sharp grotesk";
 	font-size: 18px;
 	width: 20em;
+
+	transition: transform 0.2s;
 }
+
+main>section:nth-of-type(4)>div:nth-of-type(1)>a:hover {
+	transform: scale(1.1);
+	color: #ff4b0a;
+	border: solid 1px #ff4b0a;
+}
+
+/************************/
+/* main 5th section css*/
+/***********************/
+
+main>section:nth-of-type(5) {
+	background-image: url(../images/background-white.svg);
+	background-size: cover;
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-color: black;
+
+	display: flex;
+	flex-direction: column;
+	gap: 2em;
+	padding: 5em 1.5em;
+	justify-content: center;
+}
+
+main>section:nth-of-type(5)>h2 {
+	color: white;
+	font-size: 5em;
+	align-self: start;
+}
+
+main>section:nth-of-type(5)>p {
+	color: white;
+	font-size: 1.25em;
+	font-family: "sharp grotesk";
+	text-align: start;
+	line-height: 1.5em;
+}
+
+main>section:nth-of-type(5)>a {
+	color: white;
+	text-decoration: none;
+	align-self: start;
+	padding: 1.125em;
+	background-image: linear-gradient(to right, #ff4b0a, #ff0246);
+	border-radius: 3px;
+	font-size: 1.125em;
+	font-family: "sharp grotesk";
+
+	transition: transform 0.2s;
+}
+
+main>section:nth-of-type(5)>a:hover {
+	transform: scale(1.1);
+}
+
+/************************/
+/* main 6th section css*/
+/***********************/
+
+
+main>section:nth-of-type(6) {
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	padding: 1.25em;
+	margin-bottom: 2em;
+}
+
+main>section:nth-of-type(6)>h2 {
+	text-align: left;
+	font-size: 3.75em;
+	font-family: "tusker grotesk", sans-serif;
+	font-weight: 600;
+	margin: 1.5em 0 0.5em 0;
+}
+
+
+
+/* First input section css */
+
+main>section:nth-of-type(6)>section:nth-of-type(1) {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 0.5em;
+}
+
+main>section:nth-of-type(6)>section:nth-of-type(1)>label {
+	display: flex;
+	color: gray;
+	font-size: 0.875em;
+	font-family: "sharp grotesk";
+}
+
+main>section:nth-of-type(6)>section:nth-of-type(1)>input {
+	border: none;
+	border-bottom: solid 2px black;
+	flex-grow: 1;
+	color: gray;
+	padding: 0.5em 1em;
+	border-width: 0 0 2px 0;
+	font-size: 1.125em;
+}
+
+/* Second input section css */
+
+main>section:nth-of-type(6)>section:nth-of-type(2) {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 0.5em;
+}
+
+
+main>section:nth-of-type(6)>section:nth-of-type(2)>label {
+	display: flex;
+	color: gray;
+	font-size: 0.875em;
+	font-family: "sharp grotesk";
+}
+
+main>section:nth-of-type(6)>section:nth-of-type(2)>input {
+	border: none;
+	border-bottom: solid 2px black;
+	flex-grow: 1;
+	color: gray;
+	padding: 0.5em 1em;
+	border-width: 0 0 2px 0;
+	font-size: 1.125em;
+}
+
+main>section:nth-of-type(6)>section:nth-of-type(2)>input:focus {
+	border: solid 1px gray;
+}
+
+/* Third input section css */
+
+main>section:nth-of-type(6)>section:nth-of-type(3) {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 0.5em;
+}
+
+main>section:nth-of-type(6)>section:nth-of-type(3)>label {
+	display: flex;
+	color: gray;
+	font-size: 0.875em;
+	font-family: "sharp grotesk";
+}
+
+main>section:nth-of-type(6)>section:nth-of-type(3)>textarea {
+	border: none;
+	border-bottom: solid 2px black;
+	flex-grow: 1;
+	color: gray;
+	padding: 0.5em 1em;
+	border-width: 0 0 2px 0;
+	font-size: 1.125em;
+	font-family: "sharp grotesk";
+}
+
+/* end of forms*/
+
+main>section:nth-of-type(6)>p {
+	text-align: left;
+	font-family: "sharp grotesk";
+	font-size: 1em;
+	line-height: 1.5em;
+	margin-bottom: 2em;
+}
+
+main>section:nth-of-type(6)>p>a {
+	color: #ff4b0a;
+}
+
+main>section:nth-of-type(6)>a {
+	color: white;
+	text-decoration: none;
+	align-self: start;
+	padding: 1em;
+	background-image: linear-gradient(to right, #ff4b0a, #ff0246);
+	border-radius: 3px;
+
+	font-size: 1.125em;
+	font-family: "sharp grotesk";
+}
+
+/************************/
+/* main 7th section css*/
+/***********************/
+
+main>section:nth-of-type(7) {
+	display: flex;
+	justify-content: start;
+	flex-direction: column;
+	padding: 1.25em;
+	gap: 1em;
+
+	padding-top: 4em;
+	padding-bottom: 4em;
+
+	background-image: linear-gradient(to bottom, #ff4b0a, #ff0246);
+}
+
+main>section:nth-of-type(7)>h2 {
+	color: white;
+	font-size: 3.75em;
+	text-align: start;
+}
+
+main>section:nth-of-type(7)>p {
+	color: white;
+
+	font-family: "sharp grotesk", sans-serif;
+	font-size: 1.25em;
+}
+
+main>section:nth-of-type(7)>a {
+	color: #ff0246;
+	text-decoration: none;
+	background-color: white;
+	border-radius: 3px;
+	padding: 0.9em;
+	width: min-content;
+
+	font-family: "sharp grotesk", sans-serif;
+	font-size: 1.25em;
+
+	transition: transform 0.2s;
+}
+
+main>section:nth-of-type(7)>a:hover {
+	transform: scale(1.1);
+}
+
+
+
+
+/*************/
+/* Footer css*/
+/*************/
+
+footer {
+	background-color: black;
+}
+
+footer>section:nth-of-type(1) {
+	display: flex;
+	justify-content: space-evenly;
+
+	padding: 0.875em;
+}
+
+footer>section:nth-of-type(1)>img {
+	width: 50px;
+	height: auto;
+}
+
+footer>section:nth-of-type(2) {
+	padding: 3.75em 1em;
+
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+footer>section:nth-of-type(2)>section:nth-of-type(1)>a {
+	color: white;
+	padding: 0.6em;
+}
+
+footer>section:nth-of-type(2)>section:nth-of-type(2)>a {
+	display: flex;
+
+	color: white;
+	padding: 0.5em;
+
+	font-family: "sharp grotesk";
+	font-size: 1em;
+	text-decoration: none;
+}
+
+footer>section:nth-of-type(2)>section:nth-of-type(2)>a:hover {
+	color: #ff4b0a;
+	transition: 1s;
+}
+
+
+footer>section:nth-of-type(2)>a:nth-of-type(1)>i::before {
+	content: "\f39e";
+	font-family: "FontAwesome";
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: inherit;
+}
+
+footer>section:nth-of-type(2) img {
+	width: 250px;
+	height: auto;
+}
+
+footer>section:nth-of-type(2)>section:nth-of-type(1) {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 1em;
+}
+
+footer>section:nth-of-type(2)>section:nth-of-type(2) {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+
+
+footer>section:nth-of-type(3) {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	text-decoration: none;
+	color: gray;
+	padding: 0.875em;
+}
+
+footer>section:nth-of-type(3)>a {
+	text-decoration: none;
+	color: gray;
+	font-size: 1.125em;
+	font-family: "sharp grotesk", sans-serif;
+}
+
+footer>section:nth-of-type(3)>a:hover {
+	color: white;
+
+}
+
+
+/* SVG's */
+
+section > a > svg > path {
+	fill: white;
+	transform: scale(0.1);
+}
+
+section > a:nth-of-type(2) > svg > path {
+	fill: white;
+	transform: scale(1.1);
+}
+
+section > a:nth-of-type(3) > svg > path {
+	fill: white;
+	transform: scale(0.7);
+}
+
+section > a:nth-of-type(4) > svg > path {
+	fill: white;
+	transform: scale(1.1);
+}
+
+section > a:nth-of-type(5) > svg > path {
+	fill: white;
+	transform: scale(0.6);
+}
+
+section > a:nth-of-type(6) > svg > path {
+	fill: white;
+	transform: scale(1.4);
+}
+
+
+svg {
+	width: 32px;
+	height: 32px;
+}
+
+
+/* classes dropdown */
 

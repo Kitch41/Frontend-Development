@@ -1,12 +1,12 @@
 // variabelen
+var navbutton = document.querySelector("header nav:nth-of-type(2) button");
+
+var dropdownmenu = document.querySelector(".dropdown-menu")
 
 
 // nav button javascript
-var navbutton = document.querySelector("header section:nth-of-type(2) button");
 
-
-
-navbutton.addEventListener("click", navbuttonClick);
+navbutton.addEventListener("click", dropdownbuttonevents);
 
 
 // functions
@@ -14,3 +14,19 @@ navbutton.addEventListener("click", navbuttonClick);
 function navbuttonClick() {
   navbutton.classList.toggle("menuOpen");
 }
+
+function dropdownbuttonevents() {
+    toggleMenu()
+    navbuttonClick()
+}
+
+// dropdown menu
+
+
+
+function toggleMenu(){
+
+    dropdownmenu.classList.toggle("menuOpen");
+}
+
+// calling events

@@ -15,8 +15,10 @@
 </head>
 
 <body>
+
 	<header>
-		<section>
+		<!-- First Section Header-->
+		<nav>
 
 			<ul>
 				<li>
@@ -41,7 +43,7 @@
 						On sale
 					</a>
 					<p>
-						<time datetime="2022-11-24">Nov 24</time> - <time datetime="2022-11-2">Nov 27</time>
+						<time datetime="2022-11-24">Nov 24</time> - <time datetime="2022-11-27">Nov 27</time>
 					</p>
 					<p>
 						Jönköping, Sweden
@@ -104,36 +106,46 @@
 					</p>
 				</li>
 			</ul>
-		</section>
-		<section>
-			<a href="./index.html"><img src="./images/Dreamhack-logo.png" alt="Dreamhack logo in blocky font"></a>
-			<button aria-label="navigation menu button">
-				<span></span>
-				<span></span>
-				<span></span>
-			  </button>
+		</nav>
 
-		</section>
+		<!-- Second Section Header-->
+		<nav>
+			<a href="./index.html"><img src="./images/Dreamhack-logo.png" alt="Dreamhack logo in blocky font"></a>
+			<button aria-label="navigation menu button" class="dropdown-button">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+
+			
+			<div class="dropdown-menu">
+				<ul>
+					<li><a href="#">Merch</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Press</a></li>
+					<li><a href="#">Partners</a></li>
+				</ul>
+			</div>
+
+		</nav>
 
 
 	</header>
 
 	<main>
+		<!-- First Section Main-->
 		<section>
 			<h1>Dreamhack Winter 2022</h1>
 
 			<iframe 
-				width=100%
-				height=100%
 				src="https://www.youtube.com/embed/O3TeKVgkjfU" 
-				title="YouTube video player" 
-				frameborder="0" 
+				title="YouTube video player"  
 				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-				allowfullscreen="true">
+				allowfullscreen>
 			</iframe>
 	
 			<p>
-				<time datetime="2022-11-24">Nov 24</time> - <time datetime="2022-11-2">Nov 27</time> 2022
+				<time datetime="2022-11-24">Nov 24</time> - <time datetime="2022-11-27">Nov 27</time> 2022
 			</p>
 	
 			<p>
@@ -146,8 +158,9 @@
 
 		</section>
 
+		<!-- Second Section Main-->
 		<section>
-			<div>
+			<section>
 			
 				<h2>
 					Our World Tour
@@ -156,8 +169,9 @@
 				<p>
 					<b>Come for one thing, stay for another.</b> All the LAN parties. All the main stage shenanigans. Expo booths. Trophy lifts. Tabletop tournaments. Dodgeball games.
 				</p>
-			</div>
+			</section>
 		</section>
+		<!-- Third Section Main-->
 		<section>
 			
 
@@ -179,7 +193,8 @@
 						<a href="#">Get Your Tickets</a>
 					</div>
 					<div>
-						<img src="./images/winter2022.jpg">
+						<h5>Tickets out now</h5>
+						<img src="./images/winter2022.jpg" alt="Game Event hall in Jonkoping Sweden">
 					</div>
 				</li>
 				<li>
@@ -196,7 +211,8 @@
 					</div>
 
 					<div>
-						<img src="./images/valencia2022.jpg">
+						<h5>Available Now</h5>
+						<img src="./images/valencia2022.jpg" alt="Mercy character from overwatch being cosplayed in dreamhack valencia">
 					</div>
 				</li>
 				<li>
@@ -213,7 +229,8 @@
 					</div>
 
 					<div>
-						<img src="./images/hannover2022.jpg">
+						<h5>Flash sale</h5>
+						<img src="./images/hannover2022.jpg" alt="Game setup in hannover gemany">
 					</div>
 				</li>
 				<li>
@@ -231,7 +248,7 @@
 					</div>
 					
 					<div>
-						<img src="./images/sandiego2022.webp">
+						<img src="./images/sandiego2022.webp" alt="San diego convention center in california">
 					</div>
 
 				</li>
@@ -251,7 +268,7 @@
 					</div>
 
 					<div>
-						<img src="./images/DreamHackJapan_about.jpg">
+						<img src="./images/DreamHackJapan_about.jpg" alt="2 men looking at eachother in gaming event in Melbourne">
 					</div>
 				</li>
 				<li>
@@ -268,17 +285,18 @@
 					</div>
 					
 					<div>
-						<img src="./images/japan2023.jpg">
+						<img src="./images/japan2023.jpg" alt="People looking up in gamehall in Japan">
 					</div>
 				</li>
 			</ul>
 
 		</section>
+		<!-- Fourth Section Main-->
 		<section>
 			<div>
-				<h3>
+				<h2>
 					unreally really real
-				</h3>
+				</h2>
 				<p>
 					In our first merch drop, you will find the basics. Hoodie, t-shirt, sweatpants. Perfect for a day of gaming, comfortable enough to see the light of day once you need refreshments, and nowadays a perfectly accepted work attire.
 				</p>
@@ -291,18 +309,164 @@
 
 
 		</section>
+		<!-- Fifth Section Main-->
 		<section>
 
+			<h2>
+				The Manifesto
+			</h2>
+			<p>
+				Our promise to you is more than just new colors and flashy warps however. In everything we do, we wanted to infuse a sense of meaning derived from our love for the gaming community. And so our manifesto was created to guide us in creating future DreamHack experiences.
+			</p>
+			<a href="#">
+				Read the manifesto
+			</a>
 
 
+		</section>
+		<!-- Sixth Section Main-->
+		<section>
+			<h2>
+				Get in touch
+			</h2>
+
+			<section>
+
+				<label for="form-field-name">
+					Your Name
+				</label>
+				<input id="form-field-name" size="1" type="text" name="form_fields[name]" placeholder="Name">
+
+			</section>
+			<section>
+				
+				<label for="form-field-email">
+					Your Email
+				</label>
+				<input id="form-field-email" size="1" type="email" name="form_field[email]" placeholder="Email" required="required">
+
+			</section>
+			<section>
+				
+				<label for="form-field-message">
+					Message
+				</label>
+				<textarea id="form-field-message" name="form_fields[message]" rows="4" placeholder="Message"></textarea>
+
+			</section>
+			<p>
+				All personal data will be processed in accordance with our <a>Privacy Notice</a>
+			</p>
+
+			<a>
+				Send Message
+			</a>
+		</section>
+		<!--Seventh Section Main-->
+		<section>
+			<h2>Newsletter, Surveys & Raffles</h2>
+			<p>
+				Now you can receive updates, surveys, and raffle invitations straight into your inbox. Choose which areas of interest you want to hear about! There will also be promo codes or per-sales exclusive to our mailing lists.
+			</p>
+			<a href="#">
+				Subscribe
+			</a>
 		</section>
 	
 	</main>
 
 	<footer>
 
+		<section>
+			<img src="./images/intel-logo.png" alt="Intel logo">
+			<img src="./images/monster-logo.png" alt="monster energy logo">
+		</section>
+
+
+		<section>
+			<img src="./images/Dreamhack-logo.png" alt="Dreamhack logo in white futuristic letters">
+			
+			<section>
+				<a href="#">
+					<svg>
+
+						<!--first logo-->
+						<path id="Facebooklogo" d="M81.703,165.106h33.981V305c0,2.762,2.238,5,5,5h57.616c2.762,0,5-2.238,5-5V165.765h39.064
+						c2.54,0,4.677-1.906,4.967-4.429l5.933-51.502c0.163-1.417-0.286-2.836-1.234-3.899c-0.949-1.064-2.307-1.673-3.732-1.673h-44.996
+						V71.978c0-9.732,5.24-14.667,15.576-14.667c1.473,0,29.42,0,29.42,0c2.762,0,5-2.239,5-5V5.037c0-2.762-2.238-5-5-5h-40.545
+						C187.467,0.023,186.832,0,185.896,0c-7.035,0-31.488,1.381-50.804,19.151c-21.402,19.692-18.427,43.27-17.716,47.358v37.752H81.703
+						c-2.762,0-5,2.238-5,5v50.844C76.703,162.867,78.941,165.106,81.703,165.106z"/>
+
+					</svg>
+				</a>
+				<a href="#">
+
+					<svg>
+						<path d="M28,6.937c-0.957,0.425-1.985,0.711-3.064,0.84c1.102-0.66,1.947-1.705,2.345-2.951c-1.03,0.611-2.172,1.055-3.388,1.295 c-0.973-1.037-2.359-1.685-3.893-1.685c-2.946,0-5.334,2.389-5.334,5.334c0,0.418,0.048,0.826,0.138,1.215 c-4.433-0.222-8.363-2.346-10.995-5.574C3.351,6.199,3.088,7.115,3.088,8.094c0,1.85,0.941,3.483,2.372,4.439 c-0.874-0.028-1.697-0.268-2.416-0.667c0,0.023,0,0.044,0,0.067c0,2.585,1.838,4.741,4.279,5.23 c-0.447,0.122-0.919,0.187-1.406,0.187c-0.343,0-0.678-0.034-1.003-0.095c0.679,2.119,2.649,3.662,4.983,3.705 c-1.825,1.431-4.125,2.284-6.625,2.284c-0.43,0-0.855-0.025-1.273-0.075c2.361,1.513,5.164,2.396,8.177,2.396 c9.812,0,15.176-8.128,15.176-15.177c0-0.231-0.005-0.461-0.015-0.69C26.38,8.945,27.285,8.006,28,6.937z"/>
+					</svg>
+				</a>
+				<a href="#">
+					<svg>
+						<path d="M 16.5 5 C 10.16639 5 5 10.16639 5 16.5 L 5 31.5 C 5 37.832757 10.166209 43 16.5 43 L 31.5 43 C 37.832938 43 43 37.832938 43 31.5 L 43 16.5 C 43 10.166209 37.832757 5 31.5 5 L 16.5 5 z M 16.5 8 L 31.5 8 C 36.211243 8 40 11.787791 40 16.5 L 40 31.5 C 40 36.211062 36.211062 40 31.5 40 L 16.5 40 C 11.787791 40 8 36.211243 8 31.5 L 8 16.5 C 8 11.78761 11.78761 8 16.5 8 z M 34 12 C 32.895 12 32 12.895 32 14 C 32 15.105 32.895 16 34 16 C 35.105 16 36 15.105 36 14 C 36 12.895 35.105 12 34 12 z M 24 14 C 18.495178 14 14 18.495178 14 24 C 14 29.504822 18.495178 34 24 34 C 29.504822 34 34 29.504822 34 24 C 34 18.495178 29.504822 14 24 14 z M 24 17 C 27.883178 17 31 20.116822 31 24 C 31 27.883178 27.883178 31 24 31 C 20.116822 31 17 27.883178 17 24 C 17 20.116822 20.116822 17 24 17 z"/>
+					</svg>
+				</a>
+				<a href="#">
+					<svg>
+						<path d="M 15 4 C 10.814 4 5.3808594 5.0488281 5.3808594 5.0488281 L 5.3671875 5.0644531 C 3.4606632 5.3693645 2 7.0076245 2 9 L 2 15 L 2 15.001953 L 2 21 L 2 21.001953 A 4 4 0 0 0 5.3769531 24.945312 L 5.3808594 24.951172 C 5.3808594 24.951172 10.814 26.001953 15 26.001953 C 19.186 26.001953 24.619141 24.951172 24.619141 24.951172 L 24.621094 24.949219 A 4 4 0 0 0 28 21.001953 L 28 21 L 28 15.001953 L 28 15 L 28 9 A 4 4 0 0 0 24.623047 5.0546875 L 24.619141 5.0488281 C 24.619141 5.0488281 19.186 4 15 4 z M 12 10.398438 L 20 15 L 12 19.601562 L 12 10.398438 z"/>
+					</svg>
+				</a>
+				<a href="#">
+					<svg>
+						<path d="M 5.3125 1 L 2 9.8125 L 2 43 L 13 43 L 13 49 L 20.40625 49 L 26.40625 43 L 35.40625 43 L 48 30.4375 L 48 1 Z M 11 6 L 43 6 L 43 28 L 37 34 L 25 34 L 19 40 L 19 34 L 11 34 Z M 20 13 L 20 27 L 26 27 L 26 13 Z M 30 13 L 30 27 L 36 27 L 36 13 Z"/>
+					</svg>
+				</a>
+				<a href="#">
+					<svg>
+						<path d="M21,23l-4.378-3.406L17,21H5c-1.105,0-2-0.895-2-2V5c0-1.105,0.895-2,2-2h14c1.105,0,2,0.895,2,2V23z M16.29,8.57	c0,0-1.23-0.95-2.68-1.06l-0.3,0.61C12.86,8.04,12.4,7.98,12,7.98c-0.41,0-0.88,0.06-1.31,0.14l-0.3-0.61	C8.87,7.66,7.71,8.57,7.71,8.57s-1.37,1.98-1.6,5.84C7.49,15.99,9.59,16,9.59,16l0.43-0.58c-0.44-0.15-0.82-0.35-1.21-0.65	l0.09-0.24c0.72,0.33,1.65,0.53,3.1,0.53s2.38-0.2,3.1-0.53l0.09,0.24c-0.39,0.3-0.77,0.5-1.21,0.65L14.41,16	c0,0,2.1-0.01,3.48-1.59C17.66,10.55,16.29,8.57,16.29,8.57z M10,13.38c-0.52,0-0.94-0.53-0.94-1.18c0-0.65,0.42-1.18,0.94-1.18	s0.94,0.53,0.94,1.18C10.94,12.85,10.52,13.38,10,13.38z M14,13.38c-0.52,0-0.94-0.53-0.94-1.18c0-0.65,0.42-1.18,0.94-1.18	s0.94,0.53,0.94,1.18C14.94,12.85,14.52,13.38,14,13.38z"/>
+					</svg>
+				</a>
+
+			</section>
+
+			<section>
+				<a href="#">
+					About
+				</a>
+				<a href="#">
+					Career
+				</a>
+				<a href="#">
+					Press
+				</a>
+				<a href="#">
+					Brand
+				</a>
+				<a href="#">
+					Contact
+				</a>
+			</section>
+		</section>
+		<section>
+				<a href="#">
+					Terms of service
+				</a>
+				&nbsp;•&nbsp;
+				<a href="#">
+					Privacy Notice
+				</a>
+				&nbsp;•&nbsp;
+				<a href="#">
+					Cookie Policy
+				</a>
+				&nbsp;•&nbsp;
+				<a href="#">
+					Privacy Settings
+				</a>
+		</section>
+
 	</footer>
 	<script src="scripts/script.js"></script>
+	
 </body>
 	
 </html>

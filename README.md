@@ -157,11 +157,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1e voortgang</summary>
 
   ### Stand van zaken
-  het gaat tot nu toe best goed en ik heb veel dingen geleerd. maar er is nog genoeg te doen, De website die ik heb gekozen is al geen accessible en goed gemaakt dus     zijn er een aantal dingen die ik nog niet na kan maken. maar ik hoop dat ik er nog in ieder geval wat van kan leren.
-  
-  op dit tempo denk ik dat ik het vak wel haal, en veel nieuwe dingen leer
+  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
-  <img src="readme-images/voortgang1.pdf" width="375px" alt="homepage van mijn website">
 
   ### Agenda voor meeting
   samen met je groepje opstellen
