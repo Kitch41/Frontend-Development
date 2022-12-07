@@ -220,30 +220,50 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 <details>
   <summary>uitwerken na test in 8e werkgroep</summary>
-  
-  - Hamburgermenu inklappen wanneer je op site klikt ipv knop
 
+  Summary:
+  
+  - Over het algemeen is de site goed accesible, moet nog wat kleine aanpassingen maken maar niets wat echt slecht is.
+  Ook moet ik nog wat invisible headings aanmaken voor screenreaders zodat het naigeren makkelijker is.
+  en een skip to contentbutton maken.
+   
+  
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
   
   - De accessibility in toetsenbord gebruiken is wel geimproved.
 
+  
+  
+  
+  
   #### Screenreader
   Hier korte omschrijving (met indien nodig afbeeldingen)
+  
+  - Screenreader gaat door hamburgermenu heen
+  - SVG's worden aangegeven als image in screenreader
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  
+  - Moet svg's een alt of iets soortgelijks geven
 
+  
+  
 
   #### Muis en Toetsenbord 
   Hier korte omschrijving (met indien nodig afbeeldingen):
   
-  - Focus op explore dreamhack store showt niets
+  - Focus op explore dreamhack store showt niets <img src="readme-images/explore-shop-image" alt="een foto van een knopje">
+  
+  
   - Met de muis en toetsenbord alleen is de site prima te besturen
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
   
   - Aanpassen in code
 
+  
+  
 
   #### Motoriek (shocks, elastiekjes)
   Hier korte omschrijving (met indien nodig afbeeldingen):
@@ -251,12 +271,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - Met parkinson is het lastig om het hamburgermenu in te klikken en kleine knoppen te gebruiken. 
   - Met elastiekjes is de website prima te gebruiken
 
-  
-  
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
   
   - In principe zou een grotere knop werken maar dit zou voor andere mensen weer een slechte addition zijn
 
+  
+  
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
   Hier korte omschrijving (met indien nodig afbeeldingen):
@@ -265,6 +285,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - Contrast is nog steeds prima te zien met alle soorten kleurenblindheid
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  
+  - Geen oplossing nodig
 
 </details>
 
