@@ -220,9 +220,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 <details>
   <summary>uitwerken na test in 8e werkgroep</summary>
+  
+  - Hamburgermenu inklappen wanneer je op site klikt ipv knop
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+  
+  - De accessibility in toetsenbord gebruiken is wel geimproved.
 
   #### Screenreader
   Hier korte omschrijving (met indien nodig afbeeldingen)
@@ -231,19 +235,34 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   #### Muis en Toetsenbord 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+  Hier korte omschrijving (met indien nodig afbeeldingen):
+  
+  - Focus op explore dreamhack store showt niets
+  - Met de muis en toetsenbord alleen is de site prima te besturen
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  
+  - Aanpassen in code
 
 
   #### Motoriek (shocks, elastiekjes)
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+  Hier korte omschrijving (met indien nodig afbeeldingen):
+  
+  - Met parkinson is het lastig om het hamburgermenu in te klikken en kleine knoppen te gebruiken. 
+  - Met elastiekjes is de website prima te gebruiken
 
+  
+  
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  
+  - In principe zou een grotere knop werken maar dit zou voor andere mensen weer een slechte addition zijn
 
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+  Hier korte omschrijving (met indien nodig afbeeldingen):
+  
+  - Met de brillen is het wel wat moeilijker om de website te gebruiken maar niets wat met tijd niet verholpen kan worden.
+  - Contrast is nog steeds prima te zien met alle soorten kleurenblindheid
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
 
