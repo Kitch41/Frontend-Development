@@ -221,72 +221,31 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 <details>
   <summary>uitwerken na test in 8e werkgroep</summary>
 
-  Summary:
-  
-  - Over het algemeen is de site goed accesible, moet nog wat kleine aanpassingen maken maar niets wat echt slecht is.
-  Ook moet ik nog wat invisible headings aanmaken voor screenreaders zodat het naigeren makkelijker is.
-  en een skip to contentbutton maken.
-   
-  
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
-  
-  - De accessibility in toetsenbord gebruiken is wel geimproved.
 
-  
-  
-  
-  
   #### Screenreader
   Hier korte omschrijving (met indien nodig afbeeldingen)
-  
-  - Screenreader gaat door hamburgermenu heen
-  - SVG's worden aangegeven als image in screenreader
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-  
-  - Moet svg's een alt of iets soortgelijks geven
 
-  
-  
 
   #### Muis en Toetsenbord 
-  Hier korte omschrijving (met indien nodig afbeeldingen):
-  
-  - Focus op explore dreamhack store showt niets <img src="readme-images/explore-shop-image" alt="een foto van een knopje">
-  
-  
-  - Met de muis en toetsenbord alleen is de site prima te besturen
+  Hier korte omschrijving (met indien nodig afbeeldingen)
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-  
-  - Aanpassen in code
 
-  
-  
 
   #### Motoriek (shocks, elastiekjes)
-  Hier korte omschrijving (met indien nodig afbeeldingen):
-  
-  - Met parkinson is het lastig om het hamburgermenu in te klikken en kleine knoppen te gebruiken. 
-  - Met elastiekjes is de website prima te gebruiken
+  Hier korte omschrijving (met indien nodig afbeeldingen)
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-  
-  - In principe zou een grotere knop werken maar dit zou voor andere mensen weer een slechte addition zijn
 
-  
-  
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
-  Hier korte omschrijving (met indien nodig afbeeldingen):
-  
-  - Met de brillen is het wel wat moeilijker om de website te gebruiken maar niets wat met tijd niet verholpen kan worden.
-  - Contrast is nog steeds prima te zien met alle soorten kleurenblindheid
+  Hier korte omschrijving (met indien nodig afbeeldingen)
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-  
-  - Geen oplossing nodig
 
 </details>
 
@@ -306,8 +265,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  Stef:
-  Hoe gaat je hamburger menu in als je buiten het menu klikt
+  | student 1      | student 2          | student 3    | student 4        |
+  | ---            | ---                | ---          | ---              |
+  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
+  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
+  | ...            | ...                | ...          | ...              |
 
 
   ### Verslag van meeting

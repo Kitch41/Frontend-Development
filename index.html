@@ -98,6 +98,16 @@
 		<!-- Second nav Header-->
 		<nav>
 			<a href="./index.html"><img src="./images/Dreamhack-logo.png" alt="Dreamhack logo in blocky font"></a>
+			
+
+			<ul>
+				<li><a href="#">Merch</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Press</a></li>
+				<li><a href="#">Partners</a></li>
+			</ul>
+
+			
 			<button aria-label="navigation menu button">
 				<span></span>
 				<span></span>
@@ -317,30 +327,23 @@
 				Get in touch
 			</h2>
 
-			<section>
-
-				<label for="form-field-name">
-					Your Name
-				</label>
-				<input id="form-field-name" size="1" type="text" name="form_fields[name]" placeholder="Name">
-
-			</section>
-			<section>
+				<form>
+					<label for="form-field-name">
+						Your Name
+					</label>
+					<input id="form-field-name" size="1" type="text" name="form_fields[name]" placeholder="Name">
+					
+					<label for="form-field-email">
+						Your Email
+					</label>
+					<input id="form-field-email" size="1" type="email" name="form_field[email]" placeholder="Email" required="required">
 				
-				<label for="form-field-email">
-					Your Email
-				</label>
-				<input id="form-field-email" size="1" type="email" name="form_field[email]" placeholder="Email" required="required">
+					<label for="form-field-message">
+						Message
+					</label>
+					<textarea id="form-field-message" name="form_fields[message]" rows="4" placeholder="Message"></textarea>
 
-			</section>
-			<section>
-				
-				<label for="form-field-message">
-					Message
-				</label>
-				<textarea id="form-field-message" name="form_fields[message]" rows="4" placeholder="Message"></textarea>
-
-			</section>
+				</form>
 			<p>
 				All personal data will be processed in accordance with our <a href="#">Privacy Notice</a>
 			</p>

@@ -1,35 +1,37 @@
 *,
 *::after,
 *::before {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 button,
 summary {
-	cursor: pointer;
+    cursor: pointer;
 }
 
 :root {
-	/* startje */
-	--color-textwhite: white;
-	--color-textblack: black;
-	--color-orangered: #ff4b0a;
-	--color-textred: red;
-	--color-svgwhite: white;
-	--color-red: red;
-	--clr-hoverred: #FF0246;
+    /* startje */
+    --color-textwhite: white;
+    --color-textblack: black;
+    --color-orangered: #ff4b0a;
+    --color-textred: red;
+    --color-svgwhite: white;
+    --color-red: red;
+    --clr-hoverred: #FF0246;
+    --clr-lightgray: #f2f2f2;
 
-	--background-black: black;
-	--background-white: white;
+    --background-black: black;
+    --background-white: white;
+    --background-opacity-white: rgba(255, 255, 255, 0.91);
 
 
-	--clr-topheader: #111;
-	--clr-topheaderbutton: #333;
+    --clr-topheader: #111;
+    --clr-topheaderbutton: #333;
 
-	--sharpfont: "sharp grotesk";
-	--tuskerfont: "tusker grotesk";
+    --sharpfont: "sharp grotesk";
+    --tuskerfont: "tusker grotesk";
 
 }
 
@@ -47,54 +49,69 @@ summary {
 /***********************/
 
 main>section:nth-of-type(1) {
-	display: flex;
-	align-items: center;
-	flex-direction: column;
-	gap: 1.5em;
-	padding: 2em 1em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5em;
+    padding: 2em 1em;
 
-	background-image: url(https://dreamhack.com/dallas/wp-content/uploads/sites/17/2022/05/warp-festival-header.svg);
-	background-color: #111;
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: cover;
+    background-image: url(https://dreamhack.com/dallas/wp-content/uploads/sites/17/2022/05/warp-festival-header.svg);
+    background-color: var(--clr-topheader);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 main>section:nth-of-type(1)>h1 {
-	color: var(--color-textwhite);
-	font-family: "tusker grotesk";
-	font-size: 2.5em;
-	text-align: center;
-	text-transform: uppercase;
-	margin: 0 1.1em;
+    color: var(--color-textwhite);
+    font-family: "tusker grotesk";
+    font-size: 2.5em;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 1.1em;
 }
 
 main>section:nth-of-type(1)>p {
-	color: var(--color-textwhite);
+    color: var(--color-textwhite);
     padding: 0;
     text-align: left;
 }
 
 main>section:nth-of-type(1)>p:nth-of-type(1) {
-	font-family: "sharp grotesk";
-	margin: 1.2em 0 0;
-	line-height: 0.5em;
+    font-family: "sharp grotesk";
+    margin: 1.2em 0 0;
+    line-height: 0.5em;
 }
 
 main>section:nth-of-type(1)>p:nth-of-type(2) {
-	font-family: "sharp grotesk";
-	margin: -0.7em 0 2em;
+    font-family: "sharp grotesk";
+    margin: -0.7em 0 2em;
 }
 
 main>section:nth-of-type(1)>a {
-	background-color: red;
-	text-decoration: none;
-	color: var(--color-textwhite);
-	border-radius: .5em;
-	padding: 1em 2.2em;
+    background-color: var(--color-red);
+    text-decoration: none;
+    color: var(--color-textwhite);
+    border-radius: .5em;
+    padding: 1em 2.2em;
 
-	font-family: "sharp grotesk";
-	font-size: 0.9em;
+    font-family: "sharp grotesk";
+    font-size: 0.9em;
+    transition: 0.2s;
+}
+
+main>section:nth-of-type(1)>a:hover {
+    transform: scale(1.1);
+}
+
+main>section:nth-of-type(1)>a:nth-of-type(2) {
+    background-color: #f003;
+    border: 1px orange solid;
+}
+
+main>section:nth-of-type(1)>a:nth-of-type(2)::after {
+    content: ' 🎫';
+    filter: grayscale(1);
 }
 
 
@@ -112,20 +129,25 @@ main>section:nth-of-type(1)>a {
 
 
 main>section:nth-of-type(2)>section {
-	padding-top: 1em;
+    display: flex;
+    flex-direction: column;
+    padding-top: 1em;
+    justify-content: center;
 }
 
 main>section:nth-of-type(2)>section>h2 {
-	padding-top: 0.5em;
+    padding-top: 0.5em;
 }
 
 main>section:nth-of-type(2)>section>p {
-	color: #333;
-	font-family: "sharp grotesk";
-	font-size: 1.25em;
-	font-weight: 400;
-	text-align: center;
-	padding: 1em 1em 2em 1em;
+    color: var(--clr-topheaderbutton);
+    font-family: "sharp grotesk";
+    font-size: 1.25em;
+    font-weight: 400;
+    text-align: center;
+    padding: 1em 1em 2em 1em;
+    max-width: 40em;
+    align-self: center;
 }
 
 
@@ -142,149 +164,144 @@ main>section:nth-of-type(2)>section>p {
 
 
 main>section:nth-of-type(3) {
-	background-image: url(https://dreamhack.com/dallas/wp-content/uploads/sites/17/2022/05/warp-festival-header.svg);
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-color: rgba(255, 255, 255, 0.91);
-	background-blend-mode: lighten;
+    background-image: url(https://dreamhack.com/dallas/wp-content/uploads/sites/17/2022/05/warp-festival-header.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--background-opacity-white);
+    background-blend-mode: lighten;
 }
 
 main>section:nth-of-type(3)>div {
-	padding: 1em 2em;
-	margin-bottom: 5em;
+    padding: 1em 2em;
+    margin-bottom: 5em;
 }
 
-
-main>section>a:nth-of-type(3) {
-	background-color: #f003;
-	border: 1px orange solid;
-}
-
-main>section>a:nth-of-type(3)::after {
-	content: ' 🎫';
-	filter: grayscale(1);
-}
 
 
 main>section:nth-of-type(3)>h3 {
-	margin-bottom: 1em;
+    margin-bottom: 1em;
 }
 
 
 /* list section locations */
 
 main>section:nth-of-type(3) {
-	padding: 2em;
+    padding: 2em;
 }
 
 
 main>section:nth-of-type(3)>ul {
-	display: grid;
-	justify-content: center;
-	gap: 3em;
-	grid-template-columns: repeat( auto-fit, minmax(20em, 1fr) );
+    display: grid;
+    justify-content: center;
+    gap: 3em;
+    grid-template-columns: repeat(auto-fit, minmax(23em, 1fr));
 }
 
 main>section:nth-of-type(3)>ul>li {
-	display: flex;
-	flex-direction: column;
-	list-style: none;
-	background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    background-color: #f2f2f2;
 }
 
 main>section:nth-of-type(3)>ul>li>div:nth-of-type(1) {
-	order: 2;
-	display: flex;
-	flex-direction: column;
-	padding: 1.5em;
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5em;
 }
 
 main>section:nth-of-type(3)>ul>li>div>h5 {
-	position:absolute;
-	top:2.8em;
-	right:-6.7em;
-	
-	width:20em;
-	margin:0;
-	
-	background-color:#ff0246;
-	color:white;
-	text-align:center;
-	line-height:1.7em;
-	text-transform: uppercase;
-	
-	transform:rotate(45deg);
-	
-	font-family: "sharp grotesk";
-	font-size: 0.8em;
-	font-weight: bolder;
+    position: absolute;
+    top: 2.8em;
+    right: -6.7em;
 
-	z-index:100;
+    width: 20em;
+    margin: 0;
+
+    background-color: #ff0246;
+    color: white;
+    text-align: center;
+    line-height: 1.7em;
+    text-transform: uppercase;
+
+    transform: rotate(45deg);
+
+    font-family: "sharp grotesk";
+    font-size: 0.8em;
+    font-weight: bolder;
+
+    z-index: 100;
 }
 
 main>section:nth-of-type(3)>ul>li>div>img {
-	display:block;
-	width:100%;
-	height:100%;
-	object-fit:cover;
-	object-position:center;
-	
-	transition:.5s;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+
+    transition: .5s;
 }
 
 main>section:nth-of-type(3)>ul>li>div>img:hover {
-	transform: scale(1.2);
-	filter: brightness(.7);
+    transform: scale(1.2);
+    filter: brightness(.7);
 }
 
 main>section:nth-of-type(3)>ul>li>div:nth-of-type(2) {
-	order: 1;
-	display: inline-block;
-	overflow: hidden;
-	height: 16em;
+    order: 1;
+    display: inline-block;
+    overflow: hidden;
+    height: 16em;
 
 
-	position:relative;
-	width:100%;
-	height:16em;
+    position: relative;
+    width: 100%;
+    height: 16em;
 }
 
 
 
 main>section:nth-of-type(3)>ul>li>div>p {
-	order: 3;
-	font-family: "sharp grotesk";
-	font-size: 1em;
-	color: gray;
+    order: 3;
+    font-family: "sharp grotesk";
+    font-size: 1em;
+    color: gray;
     padding: 0;
     text-align: left;
 }
 
 main>section:nth-of-type(3)>ul>li>div>p:nth-of-type(3) {
-	margin-bottom: 1em;
+    margin-bottom: 1em;
 }
 
 main>section:nth-of-type(3)>ul>li>div h4 {
-	font-family: "tusker grotesk";
-	font-size: 1.6em;
-	order: 2;
-	color: black;
-	text-transform: uppercase;
+    font-family: "tusker grotesk";
+    font-size: 1.6em;
+    order: 2;
+    color: black;
+    text-transform: uppercase;
 }
 
 main>section:nth-of-type(3)>ul>li>div>a {
-	order: 4;
-	width: 10em;
-	background-color: red;
-	text-decoration: none;
-	text-align: center;
-	color: var(--color-textwhite);
-	border-radius: .2em;
-	padding: 1.5em 1em;
+    order: 4;
+    width: 10em;
+    background-color: red;
+    text-decoration: none;
+    text-align: center;
+    color: var(--color-textwhite);
+    border-radius: .2em;
+    padding: 1.5em 1em;
 
-	font-family: "sharp grotesk";
-	font-size: 0.9em;
+    font-family: "sharp grotesk";
+    font-size: 0.9em;
+    transition: 0.2s;
+}
+
+main>section:nth-of-type(3)>ul>li>div>a:hover {
+    transform: scale(1.1);
 }
 
 /************************/
@@ -292,62 +309,62 @@ main>section:nth-of-type(3)>ul>li>div>a {
 /***********************/
 
 main>section:nth-of-type(4) {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center;
-	background-color: #f2f2f2;
-	padding: 1%;
-	gap: 4em;
-	margin: 1% 1% 5% 1%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #f2f2f2;
+    padding: 1%;
+    gap: 4em;
+    margin: 1% 1% 5% 1%;
 }
 
 main>section:nth-of-type(4)>div:nth-of-type(1) {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: start;
-	padding: 10% 5% 5% 5%;
-	gap: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 10% 5% 5% 5%;
+    gap: 1em;
 }
 
 main>section:nth-of-type(4)>div:nth-of-type(1)>h2 {
-	text-align: left;
-	font-size: 2.4em;
+    text-align: left;
+    font-size: 2.4em;
 }
 
 main>section:nth-of-type(4)>div:nth-of-type(1)>p {
-	max-width: 34em;
-	text-align: left;
-	font-family: "sharp grotesk";
-	color: #000000B3;
+    max-width: 34em;
+    text-align: left;
+    font-family: "sharp grotesk";
+    color: #000000B3;
     padding: 0;
 }
 
 main>section:nth-of-type(4)>div:nth-of-type(2)>img {
-	width: 100vw;
-	max-width: 30em;
-	height: auto;
+    width: 100vw;
+    max-width: 30em;
+    height: auto;
 }
 
 main>section:nth-of-type(4)>div:nth-of-type(1)>a {
-	border: solid 1px #000000BD;
-	padding: 18px;
-	border-radius: 3px;
-	text-decoration: none;
-	text-align: center;
-	color: black;
-	font-family: "sharp grotesk";
-	font-size: 18px;
-	width: 20em;
+    border: solid 1px #000000BD;
+    padding: 18px;
+    border-radius: 3px;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    font-family: "sharp grotesk";
+    font-size: 18px;
+    width: 20em;
 
-	transition: transform 0.2s;
+    transition: transform 0.2s;
 }
 
 main>section:nth-of-type(4)>div:nth-of-type(1)>a:hover {
-	transform: scale(1.1);
-	color: #ff4b0a;
-	border: solid 1px #ff4b0a;
+    transform: scale(1.1);
+    color: #ff4b0a;
+    border: solid 1px #ff4b0a;
 }
 
 /************************/
@@ -355,50 +372,50 @@ main>section:nth-of-type(4)>div:nth-of-type(1)>a:hover {
 /***********************/
 
 main>section:nth-of-type(5) {
-	background-image: url(../images/background-white.svg);
-	background-size: cover;
-	background-position: top center;
-	background-repeat: no-repeat;
-	background-color: black;
+    background-image: url(../images/background-white.svg);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-color: black;
 
-	display: flex;
-	flex-direction: column;
-	gap: 2em;
-	padding: 5em 1.5em;
-	justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding: 5em 1.5em;
+    justify-content: center;
 }
 
 main>section:nth-of-type(5)>h2 {
-	color: white;
-	font-size: 5em;
-	text-align: left;
+    color: white;
+    font-size: 5em;
+    text-align: left;
 }
 
 main>section:nth-of-type(5)>p {
-	color: white;
-	font-size: 1.25em;
-	font-family: "sharp grotesk";
-	text-align: left;
-	line-height: 1.5em;
+    color: white;
+    font-size: 1.25em;
+    font-family: "sharp grotesk";
+    text-align: left;
+    line-height: 1.5em;
     padding: 0;
 
 }
 
 main>section:nth-of-type(5)>a {
-	color: white;
-	text-decoration: none;
-	align-self: start;
-	padding: 1.125em;
-	background-image: linear-gradient(to right, #ff4b0a, #ff0246);
-	border-radius: 3px;
-	font-size: 1.125em;
-	font-family: "sharp grotesk";
+    color: white;
+    text-decoration: none;
+    align-self: start;
+    padding: 1.125em;
+    background-image: linear-gradient(to right, #ff4b0a, #ff0246);
+    border-radius: 3px;
+    font-size: 1.125em;
+    font-family: "sharp grotesk";
 
-	transition: 0.2s;
+    transition: 0.2s;
 }
 
 main>section:nth-of-type(5)>a:hover {
-	transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 /************************/
@@ -407,136 +424,134 @@ main>section:nth-of-type(5)>a:hover {
 
 
 main>section:nth-of-type(6) {
-	display: flex;
-	flex-direction: column;
-	justify-content: start;
-	padding: 1.25em;
-	margin-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 1.25em;
+    margin-bottom: 2em;
 }
 
 main>section:nth-of-type(6)>h2 {
-	text-align: left;
-	font-size: 3.75em;
-	font-family: "tusker grotesk", sans-serif;
-	font-weight: 600;
-	margin: 1.5em 0 0.5em 0;
+    text-align: left;
+    font-size: 3.75em;
+    font-family: "tusker grotesk", sans-serif;
+    font-weight: 600;
+    margin: 1.5em 0 0.5em 0;
 }
 
 
 
 /* First input section css */
 
-main>section:nth-of-type(6)>section:nth-of-type(1) {
-	display: flex;
-	flex-direction: column;
-	margin-bottom: 0.5em;
+main>section:nth-of-type(6)>form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
 }
 
-main>section:nth-of-type(6)>section:nth-of-type(1)>label {
-	display: flex;
-	color: gray;
-	font-size: 0.875em;
-	font-family: "sharp grotesk";
+main>section:nth-of-type(6)>form>label:nth-of-type(1) {
+    display: flex;
+    color: gray;
+    font-size: 0.875em;
+    font-family: "sharp grotesk";
 }
 
-main>section:nth-of-type(6)>section:nth-of-type(1)>input {
-	border: none;
-	border-bottom: solid 2px black;
-	flex-grow: 1;
-	color: gray;
-	padding: 0.5em 1em;
-	border-width: 0 0 2px 0;
-	font-size: 1.125em;
+main>section:nth-of-type(6)>form>input:nth-of-type(1) {
+    border: none;
+    border-bottom: solid 2px black;
+    flex-grow: 1;
+    color: gray;
+    padding: 0.5em 1em;
+    border-width: 0 0 2px 0;
+    font-size: 1.125em;
 }
 
 /* Second input section css */
 
-main>section:nth-of-type(6)>section:nth-of-type(2) {
-	display: flex;
-	flex-direction: column;
-	margin-bottom: 0.5em;
+
+main>section:nth-of-type(6)>form>label:nth-of-type(2) {
+    display: flex;
+    color: gray;
+    font-size: 0.875em;
+    font-family: "sharp grotesk";
 }
 
-
-main>section:nth-of-type(6)>section:nth-of-type(2)>label {
-	display: flex;
-	color: gray;
-	font-size: 0.875em;
-	font-family: "sharp grotesk";
+main>section:nth-of-type(6)>form>input:nth-of-type(2) {
+    border: none;
+    border-bottom: solid 2px black;
+    flex-grow: 1;
+    color: gray;
+    padding: 0.5em 1em;
+    border-width: 0 0 2px 0;
+    font-size: 1.125em;
 }
 
-main>section:nth-of-type(6)>section:nth-of-type(2)>input {
-	border: none;
-	border-bottom: solid 2px black;
-	flex-grow: 1;
-	color: gray;
-	padding: 0.5em 1em;
-	border-width: 0 0 2px 0;
-	font-size: 1.125em;
-}
-
-main>section:nth-of-type(6)>section:nth-of-type(2)>input:focus {
-	border: solid 1px gray;
+main>section:nth-of-type(6)>form>input:focus {
+    border: solid 2px var(--clr-lightgray);
+    border-bottom: solid 2px black;
+    outline: none;
+    color: black;
 }
 
 /* Third input section css */
 
-main>section:nth-of-type(6)>section:nth-of-type(3) {
-	display: flex;
-	flex-direction: column;
-	margin-bottom: 0.5em;
+main>section:nth-of-type(6)>form>label:nth-of-type(3) {
+    display: flex;
+    color: gray;
+    font-size: 0.875em;
+    font-family: "sharp grotesk";
 }
 
-main>section:nth-of-type(6)>section:nth-of-type(3)>label {
-	display: flex;
-	color: gray;
-	font-size: 0.875em;
-	font-family: "sharp grotesk";
+main>section:nth-of-type(6)>form>textarea {
+    border: none;
+    border-bottom: solid 2px black;
+    flex-grow: 1;
+    color: gray;
+    padding: 0.5em 1em;
+    border-width: 0 0 2px 0;
+    font-size: 1.125em;
+    font-family: "sharp grotesk";
 }
 
-main>section:nth-of-type(6)>section:nth-of-type(3)>textarea {
-	border: none;
-	border-bottom: solid 2px black;
-	flex-grow: 1;
-	color: gray;
-	padding: 0.5em 1em;
-	border-width: 0 0 2px 0;
-	font-size: 1.125em;
-	font-family: "sharp grotesk";
+main>section:nth-of-type(6)>form>textarea:focus {
+    border: solid 2px var(--clr-lightgray);
+    border-bottom: solid 2px black;
+    outline: none;
+    color: black;
 }
 
 /* end of forms*/
 
 main>section:nth-of-type(6)>p {
-	text-align: left;
-	font-family: "sharp grotesk";
-	font-size: 1em;
-	line-height: 1.5em;
-	margin-bottom: 2em;
-    padding:0;
+    text-align: left;
+    font-family: "sharp grotesk";
+    font-size: 1em;
+    line-height: 1.5em;
+    margin-bottom: 2em;
+    padding: 0;
 }
 
 main>section:nth-of-type(6)>p>a {
-	color: #ff4b0a;
+    color: #ff4b0a;
     text-decoration: none;
 }
 
 main>section:nth-of-type(6)>a {
-	color: white;
-	text-decoration: none;
-	align-self: start;
-	padding: 1em;
-	background-image: linear-gradient(to right, #ff4b0a, #ff0246);
-	border-radius: 3px;
+    color: white;
+    text-decoration: none;
+    align-self: start;
+    padding: 1em;
+    background-image: linear-gradient(to right, #ff4b0a, #ff0246);
+    border-radius: 3px;
 
-	font-size: 1.125em;
-	font-family: "sharp grotesk";
+    font-size: 1.125em;
+    font-family: "sharp grotesk";
 
     transition: 0.2s;
 }
 
 main>section:nth-of-type(6)>a:hover {
-	transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 /************************/
@@ -544,53 +559,69 @@ main>section:nth-of-type(6)>a:hover {
 /***********************/
 
 main>section:nth-of-type(7) {
-	display: flex;
-	justify-content: start;
-	flex-direction: column;
-	padding: 1.25em;
-	gap: 1em;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    padding: 1.25em;
+    gap: 1em;
 
-	padding-top: 4em;
-	padding-bottom: 4em;
+    padding-top: 4em;
+    padding-bottom: 4em;
 
-	background-image: linear-gradient(to bottom, #ff4b0a, #ff0246);
+    background-image: linear-gradient(to bottom, #ff4b0a, #ff0246);
 }
 
 main>section:nth-of-type(7)>h2 {
-	color: white;
-	font-size: 3.75em;
-	text-align: start;
+    color: white;
+    font-size: 3.75em;
+    text-align: start;
 }
 
 main>section:nth-of-type(7)>p {
-	color: white;
+    color: white;
 
-	font-family: "sharp grotesk", sans-serif;
-	font-size: 1.25em;
+    font-family: "sharp grotesk", sans-serif;
+    font-size: 1.25em;
     text-align: start;
-    padding: 0; 
+    padding: 0;
 }
 
 main>section:nth-of-type(7)>a {
-	color: #ff0246;
-	text-decoration: none;
-	background-color: white;
-	border-radius: 3px;
-	padding: 0.9em;
-	width: min-content;
+    color: #ff0246;
+    text-decoration: none;
+    background-color: white;
+    border-radius: 3px;
+    padding: 0.9em;
+    width: min-content;
 
-	font-family: "sharp grotesk", sans-serif;
-	font-size: 1.25em;
+    font-family: "sharp grotesk", sans-serif;
+    font-size: 1.25em;
 
-	transition: transform 0.2s;
+    transition: transform 0.2s;
 }
 
 main>section:nth-of-type(7)>a:hover {
-	transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 
+/* font size increase with full screen width */
 
+@media (min-width: 60em) {
 
-/* classes dropdown */
+    main>section:nth-of-type(1)>h1 {
+        font-size: 4em;
+    }
 
+    main>section:nth-of-type(2)>section>h2 {
+        font-size: 4em;
+    }
+
+    main>section:nth-of-type(6)>h2 {
+        font-size: 3em;
+    }
+
+    main>section:nth-of-type(7)>h2 {
+        font-size: 3em;
+    }
+}
