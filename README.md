@@ -137,13 +137,20 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 2e werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/BD-full-1.jpg" width="375px" alt="breakdown van de hele pagina 1">
+  <img src="readme-images/BD-full-2.jpg" width="375px" alt="breakdown van de hele pagina 2">
+  <img src="readme-images/BD-full-3.jpg" width="375px" alt="breakdown van de hele pagina 3">
 
-  ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  ### de hele pagina in small screen: 
+  <img src="readme-images/BD-small-1.jpg" width="375px" alt="breakdown van een dynamisch deel">
 
-  ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="readme-images/BD-small-2.jpg" width="375px" alt="breakdown van een dynamisch deel 2">
+
+  <img src="readme-images/BD-small-3.jpg" width="375px" alt="breakdown van een dynamisch deel 3">
+
+  <img src="readme-images/BD-small-4.jpg" width="375px" alt="breakdown van een dynamisch deel 4">
+
+  <img src="readme-images/BD-small-5.jpg" width="375px" alt="breakdown van een dynamisch deel 5">
 
 </details>
 
@@ -172,9 +179,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
+  - geen feedback gekregen waar ik wat mee kon. maar had ook nog niet heel veel vragen
+  - 
+  - 
   - ...
 
 </details>
@@ -205,9 +212,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
+  -  Feedback gekregen over hoe ik het niet draggable hoef te maken
+  - 
+  - 
 - ...
 
 </details>
@@ -224,23 +231,35 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
 
+  door header heen tabben is verbeterd op mijn site
+
   #### Screenreader
   Hier korte omschrijving (met indien nodig afbeeldingen)
 
+  geen headings per pagina
+
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+
+  onzichtbare headers maken.
 
 
   #### Muis en Toetsenbord 
   Hier korte omschrijving (met indien nodig afbeeldingen)
 
+  geen problemen
+
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
 
+  ~
 
   #### Motoriek (shocks, elastiekjes)
   Hier korte omschrijving (met indien nodig afbeeldingen)
 
+  geen moeilijkheden gevonden op mijn website wat niet al gezegd is
+
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
 
+ ~
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
   Hier korte omschrijving (met indien nodig afbeeldingen)
@@ -259,25 +278,24 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 3e voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  alles loopt goed. moet nog een aantal dingetjes verbeteren voor het eindgesprek maar ben al blij met mijn resultaat.
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+ Stef: geen vragen. alleen dingen afmaken
+ -
+ -
+ -
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
+  - niets meegekregen van de meeting
+  - 
+  - 
   - ...
 
 </details>
@@ -292,19 +310,24 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/fullscreen-web.png" width="375px" alt="uitkomst opdracht 1">
+  <img src="readme-images/fullscreen-wide.png" width="375px" alt="uitkomst opdracht 2">
 
 
   ### Dit ging goed/Heb ik geleerd: 
   Korte omschrijving met plaatjes
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  ik heb zo mega veel geleerd in dit vak dat ik niet echt alles kan benoemen maar ik ga mijn best doen.
+
+  ik heb leren coderen zonder div's en zonder margin te gebruiken voor de hierarchie en alleen voor vormgeving. 
+
+  ook heb ik extra kennis opgedaan in javascript. bijvoorbeeld het menu in laten klappen en 
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  ik heb niet echt iets wat niet gelukt is. er zijn wel een paar dingetjes zoals de skip-to-content button en nog een paar andere aanpassingen die ik had willen toevoegen als ik iets meer tijd had.
 </details>
 
 
@@ -318,8 +341,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  ten eerste is mijn grootste bron sanne 't hooft. Daar heb ik het meeste vandaan gehaald
+
+  1. https://www.w3schools.com/howto/howto_js_mobile_navbar.asp
+  2. https://www.w3schools.com/html/html_favicon.asp
+  3. https://www.w3schools.com/html/html_scripts.asp
+  4. https://www.w3schools.com/html/html_responsive.asp
+  5. https://www.w3schools.com/html/html5_semantic_elements.asp
+  6. https://www.w3schools.com/css/css_selectors.asp
 
 </details>
